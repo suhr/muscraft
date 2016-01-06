@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -15,7 +15,7 @@ SRC_URI="http://www.steinberg.net/sdk_downloads/vstsdk${MY_PV}.zip"
 
 LICENSE="VST3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~x86 ~amd64"
 IUSE=""
 
 DEPEND="app-arch/unzip"
@@ -28,16 +28,16 @@ src_compile() { :; }
 
 include_path="/usr/include/vst"
 src_install() {
-    dodir "${include_path}/public.sdk"
+	dodir "${include_path}/public.sdk"
 
-    insinto "${include_path}/public.sdk"
-    doins -r "public.sdk/source"
+	insinto "${include_path}/public.sdk"
+	doins -r "public.sdk/source"
 
-    insinto "${include_path}"
-    doins -r "pluginterfaces"
+	insinto "${include_path}"
+	doins -r "pluginterfaces"
 }
 
 pkg_postinst() {
-    einfo "Please make sure to review the license agreement, which can be found at:"
-    einfo "${ROOT}usr/share/vst3-sdk/doc/VST3_License_Agreement.html"
+	einfo "Please make sure to review the license agreement, which can be found at:"
+	einfo "${ROOT}usr/share/vst3-sdk/doc/VST3_License_Agreement.html"
 }

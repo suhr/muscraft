@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <herd>radium</herd>
+  <longdescription>
+  </longdescription>
+  <use>
+    <flag name='calf'>Use Calf Plugins</flag>
+  </use>
+</pkgmetadata>

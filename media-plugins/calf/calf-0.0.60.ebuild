@@ -1,6 +1,6 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI="5"
 
@@ -33,7 +33,6 @@ RDEPEND="dev-libs/expat
 	media-sound/fluidsynth
 	media-sound/jack-audio-connection-kit
 	x11-libs/gtk+:2
-	lash? ( virtual/liblash )
 	lv2? ( media-libs/lv2 )"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"

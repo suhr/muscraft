@@ -1,11 +1,11 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
-EAPI=2
+EAPI=5
 
-PYTHON_DEPEND="2:2.7"
-inherit eutils multilib python
+PYTHON_COMPAT=( python2_7 )
+inherit eutils multilib python-r1
 
 RESTRICT="mirror"
 DESCRIPTION="Open source music editor with a novel interface and fever limitations than trackers"
@@ -57,15 +57,13 @@ src_compile() {
 src_install() {
 	dodir /usr/lib/radium
 	insinto /usr/lib/radium
-	
+
 	mv bin/packages/s7 ./
 	rm -rf bin/packages/*
 	mv ./s7 bin/packages
 	doins -r bin/*
-	
+
 	dosym /usr/lib/radium/radium /usr/bin/radium
-	
-	insinto /usr/share/pixmaps
-	doins "${FILESDIR}/radium.xpm"
+
 	make_desktop_entry radium Radium "radium" "AudioVideo;Audio;AudioVideoEditing;"
 }
