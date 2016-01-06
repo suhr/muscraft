@@ -28,7 +28,7 @@ src_compile() {
 }
 
 src_install() {
-	dodir /usr/lib/vst
-	insinto /usr/lib/vst
+	dodir /usr/lib/vst/Dexed
+	insinto /usr/lib/vst/Dexed
 	doins Builds/Linux/build/Dexed.so
 }
