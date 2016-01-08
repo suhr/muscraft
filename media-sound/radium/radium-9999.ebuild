@@ -31,11 +31,6 @@ DEPEND="dev-qt/qtcore[qt3support]
 "
 RDEPEND="${DEPEND}"
 
-pkg_setup() {
-	python_set_active_version 2
-	python_pkg_setup
-}
-
 src_prepare() {
 	sed -i -e 's:~/SDKs/vstsdk2.4:/usr/include/vst:g' "${S}/pluginhost/Builds/Linux/Makefile"
 	sed -i -e 's:~/SDKs/vstsdk2.4:/usr/include/vst:g' "${S}/check_dependencies.sh"
