@@ -25,8 +25,8 @@ DEPEND="${RDEPEND}"
 DOCS="README.md"
 
 src_prepare() {
-	sed -i -e 's/lxvst/vst/g'
-	sed -i -e 's:~/srcs:/usr/include:g' builds/linux/VST/Makefile
+	sed -i -e 's/lxvst/vst/g' Makefile
+	sed -i -e 's:~/srcs/vstsdk2.4:/usr/include/vst:g' builds/linux/VST/Makefile
 }
 
 src_compile() {
@@ -40,6 +40,7 @@ src_install() {
 	emake DESTDIR="${D}" install
 
 	if use vst; then
+		dodir /usr/lib/vst
 		emake DESTDIR="${D}" install_vst
 	fi
 
