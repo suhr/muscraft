@@ -6,7 +6,7 @@ EAPI="5"
 
 DESCRIPTION="A multi platform, multi format plugin synth that is closely modeled on the Yamaha DX7."
 HOMEPAGE="http://asb2m10.github.io/dexed/"
-SRC_URI="https://github.com/asb2m10/dexed/archive/39d3c28853a4019dd9508278c97d9c60930fe989.zip"
+SRC_URI="https://github.com/asb2m10/dexed/archive/v0.9.1.tar.gz -> $P.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
@@ -15,8 +15,6 @@ IUSE=""
 
 RDEPEND="media-libs/vst-sdk"
 DEPEND="${RDEPEND}"
-
-S="${WORKDIR}/dexed-39d3c28853a4019dd9508278c97d9c60930fe989"
 
 src_prepare() {
 	sed -i -e 's:~/src/vstsdk2.4:/usr/include/vst:g' Builds/Linux/Makefile
