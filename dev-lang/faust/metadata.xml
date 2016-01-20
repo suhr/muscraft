@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <longdescription>
+    Faust AUdio STreams is a functional programming language for realtime audio plugins and applications development.
+    The Faust compiler translates signal processing specifications into C++ code.
+  </longdescription>
+</pkgmetadata>
