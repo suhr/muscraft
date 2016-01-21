@@ -54,8 +54,12 @@ src_install() {
 	insinto /usr/lib/radium
 
 	mv bin/packages/s7 ./
+	mv bin/packages/xmessage-1.0.3 ./
+	mv packages/libpd-master/ ./
 	rm -rf bin/packages/*
 	mv ./s7 bin/packages
+	mv ./xmessage-1.0.3/ bin/packages
+	mv ./libpd-master/ bin/packages
 	doins -r bin/*
 
 	dosym /usr/lib/radium/radium /usr/bin/radium
