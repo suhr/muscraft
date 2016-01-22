@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-DESCRIPTION="Faust AUdio STreams is a functional programming language and compiler for fast DSP algorythms."
+DESCRIPTION="FAUST is a functional programming language and compiler for fast DSP algorythms"
 HOMEPAGE="http://faust.grame.fr/"
 SRC_URI="mirror://sourceforge/faudiostream/${P}.tgz"
 
