@@ -63,5 +63,7 @@ src_install() {
 
 	dosym /usr/lib/radium/radium /usr/bin/radium
 
+	insinto /usr/share/pixmaps
+	doins "${FILESDIR}/radium.png"
 	make_desktop_entry radium Radium "radium" "AudioVideo;Audio;AudioVideoEditing;"
 }
