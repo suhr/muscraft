@@ -1,4 +1,4 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Id$
 
@@ -16,7 +16,7 @@ IUSE="vst"
 
 RDEPEND="media-libs/alsa-lib
 	media-libs/lv2
-	media-sound/jack-audio-connection-kit
+	media-sound/jack-audio-connection-kit:=
 	virtual/opengl
 	x11-libs/libX11
 	x11-libs/libXext"

@@ -21,7 +21,7 @@ DEPEND="dev-qt/qtcore[qt3support]
 	sys-libs/binutils-libs[static-libs]
 	x11-libs/libXaw
 	media-libs/alsa-lib
-	media-sound/jack-audio-connection-kit
+	media-sound/jack-audio-connection-kit:=
 	media-libs/libsamplerate
 	media-libs/liblrdf
 	media-libs/libsndfile
