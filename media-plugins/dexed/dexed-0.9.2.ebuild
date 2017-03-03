@@ -6,7 +6,7 @@ EAPI=6
 
 DESCRIPTION="A multi platform, multi format plugin synth that is closely modeled on the Yamaha DX7"
 HOMEPAGE="http://asb2m10.github.io/dexed/"
-SRC_URI="https://github.com/asb2m10/dexed/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/asb2m10/dexed/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
