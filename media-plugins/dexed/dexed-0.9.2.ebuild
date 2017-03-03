@@ -17,6 +17,7 @@ RDEPEND="media-libs/vst-sdk"
 DEPEND="${RDEPEND}"
 
 src_prepare() {
+	eapply_user
 	sed -i -e 's:~/src/vstsdk2.4:/usr/include/vst:g' Builds/Linux/Makefile
 }
 
