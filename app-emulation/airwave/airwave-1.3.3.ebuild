@@ -15,7 +15,7 @@ KEYWORDS="~x86 ~amd64"
 IUSE=""
 SLOT="0"
 
-DEPEND=">=app-emulation/wine-1.7.20
+DEPEND="virtual/wine
     dev-qt/qtwidgets:5
     dev-qt/qtnetwork:5
 "
